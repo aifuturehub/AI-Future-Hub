@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - AI Future Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar Button -->
+    <button class="menu-btn" onclick="openSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+
+
+        <a href="index.html">Home</a>
+        <a href="#gallery">AI Gallery</a>
+        <a href="#news">AI News</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+
+
+    <table width="100%" bgcolor="#4B0082">
+        <tr>
+            <td align="center">
+                <font color="white">
+                    <h1>
+                        🤖 AI Future Hub
+
+                    </h1>
+
+                    <marquee direction="left">
+                        <h3>
+                            Exploring the power of Artificial Intelligence
+                        </h3>
+                    </marquee>
+                </font>
+            </td>
+        </tr>
+
+
+    </table>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="tools.html">Tools</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+  <h1 class="center">📩 Contact Us Now</h1>
+
+  <form id="contactForm">
+
+    <table align="center" cellpadding="10">
+
+      <tr>
+        <td>Full Name:</td>
+        <td><input type="text" id="name" required></td>
+      </tr>
+
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" id="email" required></td>
+      </tr>
+
+      <tr>
+        <td>Profession:</td>
+        <td>
+          <select id="profession">
+            <option>Student</option>
+            <option>Developer</option>
+            <option>Researcher</option>
+            <option>Business Owner</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>AI Interest:</td>
+        <td>
+          <input type="radio" name="ai" value="ML">Machine Learning
+          <input type="radio" name="ai" value="Robotics">Robotics
+        </td>
+      </tr>
+
+      <tr>
+        <td>Your Message:</td>
+        <td>
+          <textarea id="message" rows="5"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Join Now">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+
+    </table>
+
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
