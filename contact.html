@@ -2,64 +2,68 @@
 <html lang="en">
 
 <head>
+  <title>Contact - AI Future Hub</title>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - AI Future Hub</title>
-
+  <link rel="shortcut icon" href="ai_logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body bgcolor="#EAF6FF">
 
-    <!-- Sidebar Button -->
-    <button class="menu-btn" onclick="openSidebar()">☰</button>
+  <button id="themeToggle" class="theme-btn">🌙</button>
 
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
+  <!-- Sidebar Button -->
+  <button class="menu-btn" onclick="openSidebar()">☰</button>
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
 
-        <a href="index.html">Home</a>
-        <a href="#gallery">AI Gallery</a>
-        <a href="#news">AI News</a>
-        <a href="#tutorials">Tutorials</a>
-        <a href="contact.html">Contact</a>
-
-    </div>
-
-
-
-    <table width="100%" bgcolor="#4B0082">
-        <tr>
-            <td align="center">
-                <font color="white">
-                    <h1>
-                        🤖 AI Future Hub
-
-                    </h1>
-
-                    <marquee direction="left">
-                        <h3>
-                            Exploring the power of Artificial Intelligence
-                        </h3>
-                    </marquee>
-                </font>
-            </td>
-        </tr>
+    <a href="index.html">🏠 Home</a>
+    <a href="index.html#gallery">🖼️ AI Gallery</a>
+    <a href="tools.html">🤖 AI Tools</a>
+    <a href="index.html#news">📰 AI News</a>
+    <a href="index.html#tutorials">📚 Tutorials</a>
+    <a href="favorites.html">⭐ Favorites</a>
 
 
-    </table>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="tools.html">Tools</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  </div>
 
 
-  <h1 class="center">📩 Contact Us Now</h1>
+
+  <table width="100%" bgcolor="#4B0082">
+    <tr>
+      <td align="center">
+        <font color="white">
+          <h1>
+            🤖 AI Future Hub
+
+          </h1>
+
+          <marquee direction="left">
+            <h3>
+              Exploring the power of Artificial Intelligence
+            </h3>
+          </marquee>
+        </font>
+      </td>
+    </tr>
+
+
+  </table>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="tools.html">Tools</a>
+
+  </nav>
+
+
+  <h1 align="center">📩 Contact Us Now</h1>
 
   <form id="contactForm">
 
@@ -79,10 +83,11 @@
         <td>Profession:</td>
         <td>
           <select id="profession">
-            <option>Student</option>
-            <option>Developer</option>
-            <option>Researcher</option>
-            <option>Business Owner</option>
+            <option value="">Select</option>
+            <option value="Student">Student</option>
+            <option value="Developer">Developer</option>
+            <option value="Researcher">Researcher</option>
+            <option value="Business Owner">Business Owner</option>
           </select>
         </td>
       </tr>
@@ -90,7 +95,7 @@
       <tr>
         <td>AI Interest:</td>
         <td>
-          <input type="radio" name="ai" value="ML">Machine Learning
+          <input type="radio" name="ai" value="Machine Learning">Machine Learning
           <input type="radio" name="ai" value="Robotics">Robotics
         </td>
       </tr>
@@ -113,7 +118,71 @@
 
   </form>
 
-  <script src="script.js"></script>
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+
+      <div class="footer-box">
+
+        <h2>🤖 AI Future Hub</h2>
+
+        <p>
+          Exploring Artificial Intelligence,
+          technology and future innovations.
+        </p>
+
+      </div>
+
+
+      <div class="footer-box">
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html#home">Home</a>
+
+        <a href="index.html#gallery">AI Gallery</a>
+
+        <a href="tools.html">AI Tools</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+
+
+      <div class="footer-box">
+
+        <h3>Follow</h3>
+
+        <p>🌐 GitHub</p>
+
+        <p>📧 Email</p>
+
+        <p>💡 AI Updates</p>
+
+      </div>
+
+
+    </div>
+
+
+    <hr>
+
+
+    <p class="copyright">
+
+      © 2026 AI Future Hub | Created by S.S.B
+
+    </p>
+
+
+  </footer>
+
+  <script type="module" src="script.js"></script>
+
 
 </body>
 

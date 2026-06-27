@@ -8,17 +8,69 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AI Future Hub explores artificial intelligence, AI tools, innovations, tutorials, and future technology trends.">
+
+
+    <meta name="keywords"
+        content="AI, Artificial Intelligence, AI tools, Machine Learning, Robotics, Future Technology">
+
+
+    <meta name="author" content="AI Future Hub">
+
+    <meta property="og:title" content="AI Future Hub">
+
+
+    <meta property="og:description" content="Explore AI tools, innovations, tutorials and future technology.">
+
+
+    <meta property="og:image" content="ai_logo.png">
+
+
+    <meta property="og:type" content="https://aifuturehub.github.io/AI-Future-Hub/">
+
+
+    <link rel="canonical" href="https://aifuturehub.github.io/AI-Future-Hub/">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="AI Future Hub">
+
+    <meta name="twitter:description" content="Explore AI tools and future technology">
+
+    <meta name="twitter:image" content="ai_logo.png">
+
+
+
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="ai_logo.png">
+    <link rel="icon" href="./ai_logo.png" type="image/png">
+    <link rel="shortcut icon" href="./ai_logo.png" type="image/png">
 
 
 </head>
 
 <body bgcolor="#EAF6FF">
 
+    <div id="loader">
 
+        <div class="loader-content">
 
+            <div class="robot">
+                🤖
+            </div>
 
+            <h2>
+                AI Future Hub
+            </h2>
+
+            <p>
+                Loading Future Technology...
+            </p>
+
+        </div>
+
+    </div>
+    <button id="themeToggle" class="theme-btn">🌙</button>
     <!-- Sidebar Button -->
     <button class="menu-btn" onclick="openSidebar()">☰</button>
 
@@ -26,14 +78,13 @@
     <div id="sidebar" class="sidebar">
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-
-
-        <a href="#home">Home</a>
-        <a href="#gallery">AI Gallery</a>
-        <a href="tools.html">AI Tools</a>
-        <a href="#news">AI News</a>
-        <a href="#tutorials">Tutorials</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">🏠 Home</a>
+        <a href="#gallery">🖼️ AI Gallery</a>
+        <a href="tools.html">🤖 AI Tools</a>
+        <a href="#news">📰 AI News</a>
+        <a href="#tutorials">📚 Tutorials</a>
+        <a href="favorites.html">⭐ Favorites</a>
+        <a href="contact.html">📞 Contact</a>
 
     </div>
 
@@ -69,19 +120,31 @@
 
 
 
-    <section class="hero" id="home">
+    <section class="hero reveal" id="home">
 
-        <h2>Welcome to the Future of Technology</h2>
 
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900">
+        <h2>
+            Welcome to the Future of Technology
+        </h2>
+
+
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900" alt="AI">
+
 
         <p>
             Artificial Intelligence is transforming healthcare,
             education, business, robotics and everyday life.
         </p>
 
-    </section>
 
+        <a href="tools.html" class="hero-btn">
+
+            🚀 Explore AI Tools
+
+        </a>
+
+
+    </section>
 
 
 
@@ -97,27 +160,188 @@
 
     <div class="card-container">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300">
-            <h3>Smart Robotics</h3>
-            <p>AI robots performing advanced tasks.</p>
+        <div class="card reveal">
+
+
+            <div class="card-img">
+
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300" loading="lazy"
+                    alt="Smart Robotics">
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>🤖 Smart Robotics</h3>
+
+
+                <p>
+                    AI robots performing advanced tasks
+                    and transforming industries.
+                </p>
+
+
+                <button>
+                    Learn More
+                </button>
+
+
+            </div>
+
+
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300">
-            <h3>Big Data Analysis</h3>
-            <p>AI analyzing large data sets.</p>
+
+        <div class="card reveal">
+
+
+            <div class="card-img">
+
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300" loading="lazy"
+                    alt="Big Data Analysis">
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>Big Data Analysis</h3>
+
+
+                <p>AI analyzing large data sets.</p>
+
+
+                <button>
+                    Learn More
+                </button>
+
+
+            </div>
+
+
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300">
-            <h3>Machine Learning</h3>
-            <p>Systems learning from data.</p>
+
+        <div class="card reveal">
+
+
+            <div class="card-img">
+
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300" loading="lazy"
+                    alt="Machine Learning">
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h3>Machine Learning</h3>
+
+                <p>Systems learning from data.</p>
+
+                <button>
+                    Learn More
+                </button>
+
+
+            </div>
+
+
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+
+    <button id="topBtn" title="Go to top">
+        ↑
+    </button>
+
+
+    <script type="module" src="script.js"></script>
+
+
+    <hr>
+
+    <section class="intro-video">
+
+        <h2 align="center">🎬 AI Future Hub Introduction</h2>
+
+        <p align="center">
+            Watch this 1-minute introduction to learn what AI Future Hub offers.
+        </p>
+
+        <center>
+            <video controls preload="metadata" width="80%"
+                poster="https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used-1024x683.jpg">
+                <source src="Ai Future Hub.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </center>
+
+    </section>
+
+    <hr>
+
+
+    <section id="gallery" class="gallery-section reveal">
+
+
+        <h2>🖼️ AI Gallery</h2>
+
+
+        <div class="gallery-container">
+
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500" loading="lazy"
+                    alt="AI Robotics">
+
+                <h3>AI Robotics</h3>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    loading="lazy" alt="Future Technology">
+
+                <h3>Future Technology</h3>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500" loading="lazy"
+                    alt="Machine Intelligence">
+
+                <h3>Machine Intelligence</h3>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <img src="https://plus.unsplash.com/premium_photo-1682002135678-87b8a2fdde50?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    loading="lazy" alt="Generative AI">
+
+                <h3>Generative AI</h3>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
 
     <h2 align="center">AI Capabilities</h2>
     <ul>
@@ -131,31 +355,290 @@
     </ul>
     <hr>
 
-    
+
 
     <hr>
 
-    <h2 align="center">Latest AI Trends</h2>
+    <section id="news" class="news-section reveal">
 
-    <ol>
-        <li>Generative AI for content creation</li>
-        <li>AI-powered healthcare systems</li>
-        <li>Autonomous vehicles</li>
-        <li>Advanced language models</li>
-        <li>AI in cybersecurity</li>
-    </ol>
+
+        <h2>📰 Latest AI Innovations</h2>
+
+
+        <div class="news-container">
+
+
+
+            <div class="news-card">
+
+                <span>2026</span>
+
+                <h3>Generative AI Growth</h3>
+
+                <p>
+                    AI is changing content creation,
+                    design, and productivity tools.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+
+
+
+            <div class="news-card">
+
+                <span>2026</span>
+
+                <h3>AI Healthcare</h3>
+
+                <p>
+                    Artificial Intelligence is helping
+                    doctors with faster analysis.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+
+
+
+            <div class="news-card">
+
+                <span>2026</span>
+
+                <h3>AI Robotics</h3>
+
+                <p>
+                    Smart robots are becoming part
+                    of modern industries.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
     <hr>
-    
 
-    <table width="100%" bgcolor="#4B0082">
-        <tr>
-            <td align="center">
-                <font color="white">
-                    <p>© 2026 AI Future Hub By S.S.B</p>
-                    <p>...Thanks for visiting here...</p>
-            </td>
-        </tr>
-    </table>
-    
+
+    <section id="tutorials" class="tutorial-section reveal">
+
+
+        <h2>📚 AI Learning Tutorials</h2>
+
+
+        <div class="tutorial-container">
+
+
+
+            <div class="tutorial-card">
+
+                <h3>🤖 AI Basics</h3>
+
+                <p>
+                    Learn what Artificial Intelligence is
+                    and how it works.
+                </p>
+
+                <button>
+                    Start Learning
+                </button>
+
+            </div>
+
+
+
+            <div class="tutorial-card">
+
+                <h3>💻 Machine Learning</h3>
+
+                <p>
+                    Understand how computers learn
+                    from data.
+                </p>
+
+                <button>
+                    Start Learning
+                </button>
+
+            </div>
+
+
+
+
+            <div class="tutorial-card">
+
+                <h3>🎨 Generative AI</h3>
+
+                <p>
+                    Explore AI image, text and
+                    content creation.
+                </p>
+
+                <button>
+                    Start Learning
+                </button>
+
+            </div>
+
+
+
+
+            <div class="tutorial-card">
+
+                <h3>🚀 AI Future</h3>
+
+                <p>
+                    Discover future technologies
+                    and possibilities.
+                </p>
+
+                <button>
+                    Start Learning
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="stats reveal">
+
+        <h2>🚀 AI Future Hub Statistics</h2>
+
+
+        <div class="stats-container">
+
+
+            <div class="stat-box">
+
+                <h1 class="counter" data-target="100">
+                    0
+                </h1>
+
+                <p>AI Tools</p>
+
+            </div>
+
+
+
+            <div class="stat-box">
+
+                <h1 class="counter" data-target="50">
+                    0
+                </h1>
+
+                <p>AI Articles</p>
+
+            </div>
+
+
+
+            <div class="stat-box">
+
+                <h1 class="counter" data-target="24">
+                    0
+                </h1>
+
+                <p>AI Updates</p>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+
+                <h2>🤖 AI Future Hub</h2>
+
+                <p>
+                    Exploring Artificial Intelligence,
+                    technology and future innovations.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+
+                <a href="#gallery">AI Gallery</a>
+
+                <a href="tools.html">AI Tools</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>Follow</h3>
+
+                <p>🌐 GitHub</p>
+
+                <p>📧 Email</p>
+
+                <p>💡 AI Updates</p>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="copyright">
+
+            © 2026 AI Future Hub | Created by S.S.B
+
+        </p>
+
+
+    </footer>
 </body>
+
 </html>
