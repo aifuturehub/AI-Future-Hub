@@ -2,16 +2,68 @@
 <html>
 
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="ai_logo.png">
+    <meta name="description"
+        content="AI Future Hub explores artificial intelligence, AI tools, innovations, tutorials, and future technology trends.">
+
+
+    <meta name="keywords"
+        content="AI, Artificial Intelligence, AI tools, Machine Learning, Robotics, Future Technology">
+
+
+    <meta name="author" content="AI Future Hub">
+
+    <meta property="og:title" content="AI Future Hub">
+
+
+    <meta property="og:description" content="Explore AI tools, innovations, tutorials and future technology.">
+
+
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aifuturehub.github.io/AI-Future-Hub/">
+    <meta property="og:image" content="https://aifuturehub.github.io/AI-Future-Hub/ai_logo.png">
+
+
+    <link rel="canonical" href="https://aifuturehub.github.io/AI-Future-Hub/">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="AI Future Hub">
+
+    <meta name="twitter:description" content="Explore AI tools and future technology">
+    <meta name="twitter:image" content="https://aifuturehub.github.io/AI-Future-Hub/ai_logo.png">
+
+    <meta name="theme-color" content="#4B0082">
+
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:site_name" content="AI Future Hub">
+
+    <meta property="og:locale" content="en_US">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./ai_logo.png" type="image/png">
+    <link rel="shortcut icon" href="./ai_logo.png" type="image/png">
+
+
+
+
     <title>Tools - AI Future Hub</title>
 
 </head>
 
 
-<body bgcolor="#EAF6FF">
+<body>
+
+    <div class="particles"></div>
 
     <button id="themeToggle" class="theme-btn">🌙</button>
     <!-- Sidebar Button -->
@@ -24,42 +76,56 @@
 
 
         <a href="index.html">🏠 Home</a>
-        <a href="index.html#gallery">🖼️ AI Gallery</a>
-        <a href="index.html#news">📰 AI News</a>
+
+        <a href="news.html">📰 AI News</a>
         <a href="index.html#tutorials">📚 Tutorials</a>
         <a href="favorites.html">⭐ Favorites</a>
         <a href="contact.html">📞 Contact</a>
+        <a href="about.html">ℹ️ About</a>
 
     </div>
 
 
+    <header class="site-header">
 
-    <table width="100%" bgcolor="#4B0082">
-        <tr>
-            <td align="center">
-                <font color="white">
-                    <h1>
-                        🤖 AI Future Hub
+        <div class="logo-area">
 
-                    </h1>
+            <img src="ai_logo.png" alt="AI Future Hub Logo" class="site-logo">
 
-                    <marquee direction="left">
-                        <h3>
-                            Exploring the power of Artificial Intelligence
-                        </h3>
-                    </marquee>
-                </font>
-            </td>
-        </tr>
+            <div>
+
+                <h1>AI Future Hub</h1>
+
+                <p class="tagline">
+                    Exploring the Power of Artificial Intelligence
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
 
 
-    </table>
+    <div class="cursor-glow"></div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="index.html#gallery">Gallery</a>
-        <a href="contact.html">Contact</a>
+
+    <button id="topBtn" title="Go to top">
+        ↑
+    </button>
+
+
+    <nav class="navbar">
+
+        <a href="index.html">🏠 Home</a>
+        <a href="tools.html" class="active">🤖 AI Tools</a>
+        <a href="news.html">📰 AI News</a>
+        <a href="favorites.html">⭐ Favorites</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="about.html">ℹ️ About</a>
+
     </nav>
+
 
 
     <h2 align="center">
@@ -118,6 +184,16 @@
         </p>
 
 
+        <div class="search-container">
+
+            <input type="text" id="toolSearch" placeholder="🔍 Search AI tools...">
+
+        </div>
+        <p id="noResults" style="display:none;">
+            😕 No AI tools found.
+        </p>
+
+        <br><br>
 
         <div class="tool-container">
 
@@ -126,8 +202,8 @@
             <div class="tool-card">
 
 
-                <span class="badge">
-                    FREE
+                <span class="badge fd">
+                    FREE + PAID
                 </span>
 
 
@@ -145,7 +221,7 @@
                 </div>
 
 
-                <a href="https://chatgpt.com/" class="tool-btn">
+                <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="tool-btn">
                     Visit Tool
                 </a>
 
@@ -162,8 +238,8 @@
             <div class="tool-card">
 
 
-                <span class="badge">
-                    FREE
+                <span class="badge ud">
+                    COMING SOON
                 </span>
 
 
@@ -197,7 +273,7 @@
             <div class="tool-card">
 
 
-                <span class="badge paid">
+                <span class="badge ud">
                     COMING SOON
                 </span>
 
@@ -225,6 +301,338 @@
 
             </div>
 
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>✨ Google Gemini</h2>
+
+                <p>
+                    Google's AI assistant for writing, coding,
+                    research, planning and multimodal conversations.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🧠 Claude</h2>
+
+                <p>
+                    AI assistant for writing, reasoning,
+                    coding, document analysis and research.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>💻 Microsoft Copilot</h2>
+
+                <p>
+                    AI assistant for productivity,
+                    web search, writing, coding and Microsoft apps.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🔎 Perplexity AI</h2>
+
+                <p>
+                    AI-powered search engine that provides
+                    accurate answers with cited sources.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <span class="badge paid">
+                    PAID
+                </span>
+
+                <h2>🎨 Midjourney</h2>
+
+                <p>
+                    Create stunning AI-generated artwork,
+                    illustrations and digital designs.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🎨 Canva AI</h2>
+
+                <p>
+                    Design presentations, images,
+                    social posts and videos using AI.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge paid">
+                    PAID
+                </span>
+
+                <h2>⚡ GitHub Copilot</h2>
+
+                <p>
+                    AI coding assistant that helps developers
+                    write, debug and complete code faster.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer"
+                    class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🖌️ Leonardo AI</h2>
+
+                <p>
+                    Generate game assets, concept art,
+                    illustrations and creative AI images.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <a href="https://leonardo.ai/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🎥 Runway</h2>
+
+                <p>
+                    AI-powered video generation,
+                    editing, background removal and effects.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <a href="https://runwayml.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>🎙️ ElevenLabs</h2>
+
+                <p>
+                    Generate realistic AI voices,
+                    narration, dubbing and speech synthesis.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+            <div class="tool-card">
+
+                <span class="badge paid">
+                    PAID
+                </span>
+
+                <h2>📝 Notion AI</h2>
+
+                <p>
+                    AI-powered writing, summarization,
+                    note-taking and productivity assistant.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                </div>
+
+                <a href="https://www.notion.so/product/ai" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
+
+            <div class="tool-card">
+
+                <span class="badge fd">
+                    FREE + PAID
+                </span>
+
+                <h2>✍️ Grammarly</h2>
+
+                <p>
+                    Improve grammar, spelling,
+                    tone and writing quality with AI.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <a href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer" class="tool-btn">
+                    Visit Tool
+                </a>
+
+                <button class="favorite-btn" onclick="favoriteTool(this)">
+                    ❤️ Favorite
+                </button>
+
+            </div>
+
 
 
         </div>
@@ -232,67 +640,72 @@
 
     </section>
 
-    <footer class="footer">
 
-        <div class="footer-container">
+    <footer class="footer-ultra">
 
+        <!-- animated background layer -->
+        <div class="footer-bg-animation"></div>
 
-            <div class="footer-box">
+        <!-- wave top -->
+        <div class="footer-wave"></div>
+
+        <div class="footer-container-ultra">
+
+            <!-- BRAND -->
+            <div class="footer-box-ultra">
 
                 <h2>🤖 AI Future Hub</h2>
 
                 <p>
                     Exploring Artificial Intelligence,
-                    technology and future innovations.
+                    future innovation, automation,
+                    and next-generation technology.
                 </p>
 
-            </div>
-
-
-
-            <div class="footer-box">
-
-                <h3>Quick Links</h3>
-
-                <a href="index.html#home">Home</a>
-
-                <a href="index.html#gallery">AI Gallery</a>
-
-                <a href="tools.html">AI Tools</a>
-
-                <a href="contact.html">Contact</a>
+                <div class="ai-tag">
+                    🚀 Built for the Future
+                </div>
 
             </div>
 
+            <!-- LINKS -->
+            <div class="footer-box-ultra">
 
+                <h3>Explore</h3>
 
-            <div class="footer-box">
-
-                <h3>Follow</h3>
-
-                <p>🌐 GitHub</p>
-
-                <p>📧 Email</p>
-
-                <p>💡 AI Updates</p>
+                <a href="index.html">🏠 Home</a>
+                <a href="tools.html">🤖 AI Tools</a>
+                <a href="news.html">📰 AI News</a>
+                <a href="favorites.html">⭐ Favorites</a>
+                <a href="about.html">ℹ️ About</a>
+                <a href="contact.html">📞 Contact</a>
 
             </div>
 
+            <!-- SOCIAL -->
+            <div class="footer-box-ultra">
+
+                <h3>Connect</h3>
+
+                <div class="social-ultra">
+
+                    <a href="#" onclick="alert('GitHub link not added yet')"><i class="fab fa-github"></i></a>
+                    <a href="#" onclick="alert('Twitter/X link not added yet')"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" onclick="alert('LinkedIn link not added yet')"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" onclick="alert('Email will be added later')"><i class="fas fa-envelope"></i></a>
+
+                </div>
+
+            </div>
 
         </div>
 
-
-        <hr>
-
-
-        <p class="copyright">
-
-            © 2026 AI Future Hub | Created by S.S.B
-
-        </p>
-
+        <div class="footer-bottom-ultra">
+            © 2026 AI Future Hub | Designed with ⚡ AI Power | Created by S.S.B
+        </div>
 
     </footer>
+
 
 
 

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "OpenAI launches new AI model",
+        "category": "AI",
+        "date": "2026-06-29",
+        "description": "New model improves reasoning and speed."
+    },
+    {
+        "title": "AI robots entering factories",
+        "category": "Robotics",
+        "date": "2026-06-28",
+        "description": "Automation is increasing worldwide."
+    },
+    {
+        "title": "AI coding tools are replacing workflows",
+        "category": "Coding",
+        "date": "2026-06-27",
+        "description": "Developers now use AI to write faster code."
+    }
+]
