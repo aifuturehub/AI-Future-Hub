@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aifuturehub.github.io/AI-Future-Hub/sitemap.xml
