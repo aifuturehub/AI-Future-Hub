@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/</loc>
+<priority>1.0</priority>
+</url>
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/about.html</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/tools</loc>
+</url>
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/tools.html</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/news</loc>
+</url>
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/news.html</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/favorites</loc>
+</url>
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/contact.html</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/contact</loc>
+</url>
 
-  <url>
-    <loc>https://ai-future-hub.pages.dev/favorites.html</loc>
-  </url>
+<url>
+<loc>https://aifuturehub.pages.dev/about</loc>
+</url>
 
 </urlset>
