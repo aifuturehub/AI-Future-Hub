@@ -20,33 +20,94 @@ if (form) {
 
         const aiField = document.querySelector('input[name="ai"]:checked');
 
+        const sendBtn = document.getElementById("sendBtn");
+        const btnText = document.getElementById("btnText");
+        const loader = document.getElementById("loader");
+
+        // 🔥 LOADING START
+        if (sendBtn) sendBtn.disabled = true;
+        if (btnText) btnText.innerText = "Sending...";
+        if (loader) loader.style.display = "inline-block";
+
+        // reCAPTCHA
+        const captchaToken = grecaptcha.getResponse();
+
+        if (!captchaToken) {
+            showToast("Please complete reCAPTCHA ❗", "error");
+            resetButtonUI();
+            return;
+        }
+
         const data = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
             profession: document.getElementById("profession").value,
             ai: aiField ? aiField.value : "Not selected",
-            message: document.getElementById("message").value
+            message: document.getElementById("message").value,
+            token: captchaToken
         };
 
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbwtVnuiJeSDrgQzfNGrzi48DWzVlxMY0CeTsPC5rbg5iq7S7UzRVSuuO8A9ifLdTda0IQ/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwrcnfPZq067KuEh01sL5-KKkwIXWopOy9gXLR8ewNx5QRN5VxovvIzHfq5GIl9uIAM/exec", {
                 method: "POST",
                 body: JSON.stringify(data)
             });
 
             if (response.ok) {
-                alert("Message Sent Successfully to AI Future Hub!");
+                showToast("Message Sent Successfully 🚀", "success");
+                showSuccessAnim();
                 form.reset();
+                grecaptcha.reset();
             } else {
-                alert("Something went wrong!");
+                showToast("Something went wrong ❌", "error");
             }
 
         } catch (error) {
-            alert("Network error!");
+            showToast("Network error ⚠️", "error");
+        } finally {
+            resetButtonUI();
         }
     });
 }
 
+
+// RESET BUTTON UI
+function resetButtonUI() {
+    const sendBtn = document.getElementById("sendBtn");
+    const btnText = document.getElementById("btnText");
+    const loader = document.getElementById("loader");
+
+    if (sendBtn) sendBtn.disabled = false;
+    if (btnText) btnText.innerText = "Send Message";
+    if (loader) loader.style.display = "none";
+}
+
+// TOAST
+function showToast(message, type = "success") {
+    const toast = document.getElementById("toast");
+
+    if (!toast) return;
+
+    toast.innerText = message;
+    toast.className = "toast show " + type;
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 3000);
+}
+
+// SUCCESS ANIMATION
+function showSuccessAnim() {
+    const anim = document.getElementById("successAnim");
+
+    if (!anim) return;
+
+    anim.classList.add("show");
+
+    setTimeout(() => {
+        anim.classList.remove("show");
+    }, 1200);
+}
 
 
 

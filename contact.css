@@ -1,0 +1,325 @@
+/* CONTACT */
+
+.contact-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 20px;
+}
+
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #111827;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.success {
+    border-left: 5px solid #00eaff;
+}
+
+.toast.error {
+    border-left: 5px solid #ff4d4d;
+}
+
+.success-anim {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #00eaff;
+    color: #000;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.success-anim.show {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.contact-card {
+
+    width: 100%;
+    max-width: 750px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+
+    animation: fadeUp .8s ease;
+}
+
+.contact-card h2 {
+
+    text-align: center;
+
+    color: #00eaff;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: #ddd;
+
+    margin-bottom: 35px;
+}
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.input-group label {
+
+    margin-bottom: 8px;
+
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 12px;
+
+    background: #1d1d1d;
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: .3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+
+    border: 2px solid #00eaff;
+
+    box-shadow: 0 0 15px #00eaff55;
+}
+
+textarea {
+
+    resize: vertical;
+}
+
+.radio-group {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+
+    color: #eee;
+
+    cursor: pointer;
+}
+
+.button-group {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.send-btn {
+
+    background: linear-gradient(45deg, #00eaff, #0077ff);
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    position: relative;
+
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 234, 255, .4);
+}
+
+
+
+#loader {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.reset-btn {
+
+    background: #444;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.reset-btn:hover {
+
+    background: #666;
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+.contact-section {
+
+    background: linear-gradient(135deg,
+            #07162f,
+            #111827,
+            #1e3a8a);
+
+    background-size: 400% 400%;
+
+    animation: bgMove 10s infinite alternate;
+}
+
+@keyframes bgMove {
+
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+
+
+
+.send-btn {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.send-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, .25);
+
+    transition: .5s;
+}
+
+.send-btn:hover::before {
+
+    left: 100%;
+}
